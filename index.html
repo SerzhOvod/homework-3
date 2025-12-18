@@ -30,7 +30,7 @@
 
       a {
         text-decoration: none;
-        color: #98a2b3;
+        color: inherit;
       }
 
       table {
@@ -58,17 +58,20 @@
         text-align: center;
       }
 
-      .img {
-        margin-bottom: 40px;
+      .td-link {
+        padding-bottom: 28px;
       }
 
-      .link {
-        display: inline-block;
-        margin-bottom: 28px;
+      .td-img {
+        padding-bottom: 40px;
+      }
+
+      .th-left {
+        padding: 0 0 48px;
+        text-align: left;
       }
 
       .title {
-        margin-bottom: 8px;
         font-size: 28px;
         font-weight: 600;
         line-height: 36px;
@@ -76,7 +79,8 @@
       }
 
       .subtitle {
-        margin-bottom: 48px;
+        margin-top: 8px;
+        line-height: 24px;
       }
 
       .table-main-row {
@@ -117,6 +121,9 @@
       .vrt-align {
         vertical-align: bottom;
       }
+      .width-50 {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -125,28 +132,22 @@
         <thead>
           <tr class="centered">
             <td class="td-link td-border-none" colspan="3">
-              <a class="link" href="#">View in browser</a>
+              <a href="#">View in browser</a>
             </td>
           </tr>
           <tr class="centered">
-            <td class="td-border-none" colspan="3">
-              <img
-                class="img"
-                src="img/logo.svg"
-                alt="ACME"
-                width="120"
-                height="56"
-              />
+            <td class="td-img td-border-none" colspan="3">
+              <img src="img/logo.svg" alt="ACME" width="120" height="56" />
             </td>
           </tr>
           <tr>
-            <td class="td-border-none" colspan="3">
+            <th class="th-left td-border-none" colspan="3">
               <p class="title">Functional Style</p>
-              <p class="subtitle" style="line-height: 24px">
+              <p class="subtitle">
                 Combine practicality and style effortlessly with our furniture,
                 offering functional designs that enhance your living space
               </p>
-            </td>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -180,9 +181,9 @@
           <tr>
             <td class="td-border-none" colspan="3">
               <table class="footer-table">
-                <tbody>
+                <tbody class="vrt-align">
                   <tr>
-                    <td class="td-border-none">
+                    <td class="td-border-none width-50">
                       <img
                         class="footer-logo"
                         src="img/logo.svg"
@@ -193,7 +194,7 @@
                       <p class="footer-subtitle bold black">Acme corporation</p>
                       <p>Think different</p>
                     </td>
-                    <td class="td-border-none vrt-align right">
+                    <td class="td-border-none">
                       123 Main Street Anytown, CA 12345
                     </td>
                   </tr>
