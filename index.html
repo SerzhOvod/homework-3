@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>ACME</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      body {
+        background: #ccc;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #667085;
+      }
+
+      a {
+        text-decoration: none;
+        color: #98a2b3;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td {
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .td-border-none {
+        border: none;
+      }
+
+      .table-inner {
+        width: 600px;
+        margin: 40px auto 0;
+        padding: 12px 24px 24px;
+        background: #fff;
+        box-shadow: 0 0 20px #5c5c5c;
+      }
+
+      .centered {
+        text-align: center;
+      }
+
+      .img {
+        margin-bottom: 40px;
+      }
+
+      .link {
+        display: inline-block;
+        margin-bottom: 28px;
+      }
+
+      .title {
+        margin-bottom: 8px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        color: #101828;
+      }
+
+      .subtitle {
+        margin-bottom: 48px;
+      }
+
+      .table-main-row {
+        height: 56px;
+      }
+
+      .bold {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .black {
+        color: #101828;
+      }
+
+      .right {
+        text-align: right;
+      }
+
+      .w-376 {
+        width: 376px;
+      }
+
+      .footer-table {
+        margin-top: 48px;
+        width: 100%;
+      }
+
+      .footer-logo {
+        margin-bottom: 12px;
+      }
+
+      .footer-subtitle {
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      .vrt-align {
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-inner">
+      <table>
+        <thead>
+          <tr class="centered">
+            <td class="td-link td-border-none" colspan="3">
+              <a class="link" href="#">View in browser</a>
+            </td>
+          </tr>
+          <tr class="centered">
+            <td class="td-border-none" colspan="3">
+              <img
+                class="img"
+                src="img/logo.svg"
+                alt="ACME"
+                width="120"
+                height="56"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="td-border-none" colspan="3">
+              <p class="title">Functional Style</p>
+              <p class="subtitle" style="line-height: 24px">
+                Combine practicality and style effortlessly with our furniture,
+                offering functional designs that enhance your living space
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-main-row">
+            <td class="bold">Item</td>
+            <td class="bold black right">Qty</td>
+            <td class="bold black right">Price</td>
+          </tr>
+          <tr class="table-main-row">
+            <td class="w-376">Elegant Feast</td>
+            <td class="black right">2</td>
+            <td class="black right">$499.99</td>
+          </tr>
+          <tr class="table-main-row">
+            <td class="w-376">Modern Fusion</td>
+            <td class="black right">2</td>
+            <td class="black right">$699.99</td>
+          </tr>
+          <tr class="table-main-row">
+            <td class="w-376">Rustic Charm</td>
+            <td class="black right">2</td>
+            <td class="black right">$399.99</td>
+          </tr>
+          <tr class="table-main-row">
+            <td class="bold w-376">Total</td>
+            <td class="black right">6</td>
+            <td class="bold black right">$3194.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="td-border-none" colspan="3">
+              <table class="footer-table">
+                <tbody>
+                  <tr>
+                    <td class="td-border-none">
+                      <img
+                        class="footer-logo"
+                        src="img/logo.svg"
+                        alt="ACME"
+                        width="120"
+                        height="56"
+                      />
+                      <p class="footer-subtitle bold black">Acme corporation</p>
+                      <p>Think different</p>
+                    </td>
+                    <td class="td-border-none vrt-align right">
+                      123 Main Street Anytown, CA 12345
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
